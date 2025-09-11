@@ -1,17 +1,16 @@
 {
-  "name": "04-calculadora-nota-express",
+  "name": "exercicio_06_apicalculadora",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^5.1.0"
   },
   "devDependencies": {

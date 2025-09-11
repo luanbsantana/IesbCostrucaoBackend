@@ -1,6 +1,8 @@
 const express =  require('express')
 const app = express()
+const cors = require('cors')
 
+app.use(cors())
 
 app.use((req, res, next) =>{
     console.log("___________*******_____________")
@@ -21,7 +23,7 @@ app.get('/nome', (req, res, next) =>{
 const calculadoraNotaRouter = require('./routes/CalculadoraNota.js')
 app.use('/calculadora', calculadoraNotaRouter)
 
-app.listen(4000, () => {
+app.listen(3000, () => {
     console.log("Aplicação rodando")
     
 })
