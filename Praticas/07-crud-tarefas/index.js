@@ -1,6 +1,11 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const dontenv = require('dotenv')
+const dontenv = require('dotenv').config
+
+const DB_HOST= process.env.DB_HOST
+const DB_USER = process.env.DB_USER
+const DB_PASS = process.env.DB_PASS
+const DB_NAME = process.env.DB_NAME
 
 const app = express()
 app.use(express.json())
